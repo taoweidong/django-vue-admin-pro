@@ -80,11 +80,11 @@
             </el-row>
           </el-card>
 
-          <el-card class="box-card"  style="margin-top: 25px">
+          <!-- <el-card class="box-card"  style="margin-top: 25px">
             <div class="work">
               <d2-icon-svg name="work" style="margin-left: 50%;transform: translateX(-50%);height: 216px"/>
             </div>
-          </el-card>
+          </el-card> -->
 
           <el-card class="box-card"  style="margin-top: 25px">
             <div slot="header" class="clearfix">

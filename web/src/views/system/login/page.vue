@@ -97,7 +97,7 @@
           </div>
         </div>
         <div class="page-login--content-footer">
-          <p class="page-login--content-footer-locales">
+          <!-- <p class="page-login--content-footer-locales">
             <a
               v-for="language in $languages"
               :key="language.value"
@@ -105,7 +105,7 @@
             >
               {{ language.label }}
             </a>
-          </p>
+          </p> -->
           <p class="page-login--content-footer-copyright">
             Copyright
             <d2-icon name="copyright" />
@@ -115,11 +115,11 @@
               晋ICP备18005113号-3
             </a>
           </p>
-          <p class="page-login--content-footer-options">
+          <!-- <p class="page-login--content-footer-options">
             <a href="#">帮助</a>
             <a href="#">隐私</a>
             <a href="#">条款</a>
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
