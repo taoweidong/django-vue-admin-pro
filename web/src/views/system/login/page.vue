@@ -168,8 +168,8 @@ export default {
       ],
       // 表单
       formLogin: {
-        username: '',
-        password: '',
+        username: 'superadmin',
+        password: 'admin123456',
         captcha: ''
       },
       // 表单校验

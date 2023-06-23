@@ -24,11 +24,29 @@
 
 
 
+## 在线体验
+
+👩‍👧‍👦演示地址：[http://demo.pro.django-vue-admin.com](http://demo.pro.django-vue-admin.com) 账号：superadmin 密码：admin123456
+
+👩‍👦‍👦文档地址：未上线，部署可参考：[http://django-vue-admin.com](http://django-vue-admin.com)
+
+
+
 ## 交流
 
 - 社区：[戳我](https://bbs.django-vue-admin.com)👩‍👦‍👦
 
 - QQ群号：812482043 <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=fOdnHhC8DJlRHGYSnyhoB8P5rgogA6Vs&jump_from=webapi"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="django-vue-admin交流01群" title="django-vue-admin交流01群"></a>
+
+- 二维码
+
+  <img src='https://gitee.com/liqianglog/django-vue-admin/raw/master/dvadmin-ui/src/assets/images/qq.jpg' width='200'>
+
+## 源码地址
+
+gitee地址(主推)：[https://gitee.com/dvadmin/django-vue-admin-pro](https://gitee.com/dvadmin/django-vue-admin-pro)👩‍👦‍👦
+
+github地址：[https://github.com/dvadmin-pro/django-vue-admin-pro](https://github.com/dvadmin-pro/django-vue-admin-pro)👩‍👦‍👦
 
 
 
@@ -129,9 +147,6 @@ docker-compose restart
 docker-compose up -d --build
 ~~~
 
-
-## 参考资料
-- https://zhuanlan.zhihu.com/p/475165400
 
 
 ## 演示图✅
