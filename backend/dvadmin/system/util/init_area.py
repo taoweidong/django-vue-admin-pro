@@ -43,7 +43,7 @@ def area_list(code_list, pcode=None, depth=1):
 
 
 def main():
-    with open(os.path.join(BASE_DIR, 'dvadmin', 'system', 'util', 'pca-code.json'), 'r') as load_f:
+    with open(os.path.join(BASE_DIR, 'dvadmin', 'system', 'util', 'pca-code.json'), 'r', encoding='utf-8') as load_f:
         code_list = json.load(load_f)
     area_list(code_list)
     if Area.objects.count() == 0:
