@@ -1,8 +1,6 @@
 import { BUTTON_STATUS_BOOL } from '@/config/button'
-import { urlPrefix as areasPrefix, areaJointPrefix } from '@/views/system/areas/api'
+import { areaJointPrefix } from '@/views/system/areas/api'
 import { request } from '@/api/service'
-import XEUtils from 'xe-utils'
-import { urlPrefix as menuPrefix } from '@/views/system/menu/api'
 
 export const crudOptions = (vm) => {
   return {
