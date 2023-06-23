@@ -56,7 +56,7 @@
                     <i slot="prepend" class="fa fa-keyboard-o"></i>
                   </el-input>
                 </el-form-item>
-                <el-form-item prop="captcha">
+                <!-- <el-form-item prop="captcha">
                   <el-input
                     type="text"
                     v-model="formLogin.captcha"
@@ -70,7 +70,7 @@
                       />
                     </template>
                   </el-input>
-                </el-form-item>
+                </el-form-item> -->
                 <el-button
                   size="default"
                   @click="submit"
@@ -169,8 +169,8 @@ export default {
       // 表单
       formLogin: {
         username: 'superadmin',
-        password: 'admin123456',
-        captcha: ''
+        password: 'admin123456'
+        // captcha: ''
       },
       // 表单校验
       rules: {
@@ -187,16 +187,16 @@ export default {
             message: '请输入密码',
             trigger: 'blur'
           }
-        ],
-        captcha: [
-          {
-            required: true,
-            message: '请输入验证码',
-            trigger: 'blur'
-          }
         ]
+        // captcha: [
+        //   {
+        //     required: true,
+        //     message: '请输入验证码',
+        //     trigger: 'blur'
+        //   }
+        // ]
       },
-      captchaKey: null,
+      // captchaKey: null,
       image_base: null
     }
   },
@@ -235,16 +235,17 @@ export default {
           // 具体需要传递的数据请自行修改代码
           this.login({
             username: that.formLogin.username,
-            password: that.$md5(that.formLogin.password),
-            captcha: that.formLogin.captcha,
-            captchaKey: that.captchaKey
+            password: that.$md5(that.formLogin.password)
+            // captcha: that.formLogin.captcha,
+            // captchaKey: that.captchaKey
           })
             .then(() => {
               // 重定向对象不存在则返回顶层路径
               this.$router.replace(this.$route.query.redirect || '/')
             })
             .catch(() => {
-              this.getCaptcha()
+              // this.getCaptcha()
+              console.log('登录发生异常...')
             })
         } else {
           // 登录表单校验失败
@@ -255,17 +256,17 @@ export default {
     /**
      * 获取验证码
      */
-    getCaptcha () {
-      api.getCaptcha().then((ret) => {
-        this.formLogin.captcha = null
-        this.captchaKey = ret.data.data.key
-        this.image_base = ret.data.data.image_base
-      })
-    }
+    // getCaptcha () {
+    //   api.getCaptcha().then((ret) => {
+    //     this.formLogin.captcha = null
+    //     this.captchaKey = ret.data.data.key
+    //     this.image_base = ret.data.data.image_base
+    //   })
+    // }
   },
   created () {
     this.$store.dispatch('d2admin/db/databaseClear')
-    this.getCaptcha()
+    // this.getCaptcha()
   }
 }
 </script>
