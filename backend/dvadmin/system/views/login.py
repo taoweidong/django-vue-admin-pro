@@ -53,7 +53,7 @@ class LoginSerializer(TokenObtainPairSerializer):
     登录的序列化器:
     重写djangorestframework-simplejwt的序列化器
     """
-    captcha = serializers.CharField(max_length=6)
+    # captcha = serializers.CharField(max_length=6)
 
     class Meta:
         model = Users
