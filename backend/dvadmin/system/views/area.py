@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
-from django.db.models import Q
 from rest_framework import serializers
 
 from dvadmin.system.models import Area
-from dvadmin.utils.json_response import SuccessResponse
 from dvadmin.utils.serializers import CustomModelSerializer
 from dvadmin.utils.viewset import CustomModelViewSet
 

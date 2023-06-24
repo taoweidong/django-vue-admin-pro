@@ -8,7 +8,6 @@
 """
 
 from dvadmin.system.models import Dept
-from dvadmin.utils.filters import DataLevelPermissionsFilter
 from dvadmin.utils.json_response import SuccessResponse
 from dvadmin.utils.serializers import CustomModelSerializer
 from dvadmin.utils.viewset import CustomModelViewSet

@@ -27,6 +27,7 @@ from dvadmin.utils.json_response import SuccessResponse, ErrorResponse
 from dvadmin.utils.serializers import CustomModelSerializer
 from dvadmin.utils.validator import CustomValidationError
 
+
 class CaptchaView(APIView):
     authentication_classes = []
 

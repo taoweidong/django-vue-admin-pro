@@ -351,4 +351,3 @@ INITIALIZE_LIST = []
 INITIALIZE_RESET_LIST = []
 # 导入租户数据
 SHARED_APPS = []
-from plugins import *
